@@ -82,7 +82,7 @@ colorEyes.addEventListener('click', function () {
 });
 
 colorFireball.addEventListener('click', function () {
-  colorFireball.style.background = arrayFireballColors[createRandomCount(arrayFireballColors.length)];
-  document.querySelector('.setup-fireball-wrap input[name="fireball-color"]').value = colorFireball.style.background;
+  document.querySelector('.setup-fireball-wrap input[name="fireball-color"]').value = arrayFireballColors[createRandomCount(arrayFireballColors.length)];
+  colorFireball.style.background = document.querySelector('.setup-fireball-wrap input[name="fireball-color"]').value;
 });
 
