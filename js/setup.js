@@ -71,7 +71,6 @@ var createArrayWizards = function () {
 
 
 var createContainerWizard = function () {
-  createArrayWizards();
   for (var i = 0; i < 4; i++) {
     wizardFragment.append(createArrayWizards()[i]);
   }
@@ -199,4 +198,3 @@ dialogHandler.addEventListener('mousedown', function (evt) {
   document.addEventListener('mousemove', onMouseMove);
   document.addEventListener('mouseup', onMouseUp);
 });
-
